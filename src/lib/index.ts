@@ -62,7 +62,7 @@ export function add(
  * Multiply arguments, element-wise.
  */
 export function multiply(
-  a: ArbDimNumArray | NdArray,
+  a: ArbDimNumArray | NdArray | number,
   b: ArbDimNumArray | NdArray | number
 ): NdArray {
   return NdArray.new(a).multiply(b);
@@ -72,7 +72,7 @@ export function multiply(
  * Divide `a` by `b`, element-wise.
  */
 export function divide(
-  a: ArbDimNumArray | NdArray,
+  a: ArbDimNumArray | NdArray | number,
   b: ArbDimNumArray | NdArray | number
 ) {
   return NdArray.new(a).divide(b);

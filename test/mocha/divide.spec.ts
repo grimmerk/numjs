@@ -39,4 +39,11 @@ describe('divide', function () {
       nj.divide(x1, x2);
     }).to.throw();
   });
+  it('can set a number to the argument', function () {
+    const a = 2;
+    const b = 3;
+    const numberResult = nj.divide(a, b);
+    const arrayResult = nj.divide(nj.array([a]), nj.array([b]));
+    expect(numberResult).to.eql(arrayResult);
+  });
 });
