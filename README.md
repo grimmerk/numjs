@@ -2,6 +2,14 @@
 
 [![npm version](https://img.shields.io/npm/v/%40d4c/numjs.svg)](https://www.npmjs.com/package/@d4c/numjs) ![example workflow](https://github.com/grimmer0125/numjs/actions/workflows/node.js.yml/badge.svg)
 
+> **Maintenance Status:** This project is in **passive maintenance** mode — critical bug fixes and small improvements may be accepted, but no active feature development is planned.
+>
+> That said, `@d4c/numjs` remains a **stable, ready-to-use** NumPy-like library with TypeScript typings out of the box — if you need basic ndarray operations without dealing with unstable APIs or a steep learning curve, it still works well.
+>
+> For more comprehensive alternatives, consider:
+> - [numpy-ts](https://github.com/nicktakpk/numpy-ts) — aims to cover 94% of NumPy's API in pure TypeScript (still in early/unstable stage)
+> - [@stdlib/ndarray](https://github.com/stdlib-js/ndarray) — mature and rigorous, but with a different API style
+
 __NumJs__ is built on top of [ndarray](https://scijs.net/packages/#scijs/ndarray) and uses many [scijs packages](https://scijs.net/packages/). `ndarray` is exported as `nj.ndarray`, and any `NdArray` instance's property `selection` is a `ndarray` object.
 
 This project is modified from https://github.com/nicolaspanel/numjs and does below modifications 
@@ -720,6 +728,14 @@ array([[[1, 3],
 > m
 array([0, 1, 2, 3, 4, 0, 1])
 ```
+
+## Contributors
+
+This project is a TypeScript port of [numjs](https://github.com/nicolaspanel/numjs) by [@nicolaspanel](https://github.com/nicolaspanel).
+
+Thanks to the following people for their contributions:
+
+- [@pppp606](https://github.com/pppp606) — scalar support for `multiply` and `divide` ([#14](https://github.com/grimmerk/numjs/pull/14))
 
 ## Documentation
 - [@d4c/numjs](https://grimmer0125.github.io/numjs/)
