@@ -1,5 +1,9 @@
 # Changelog
 
+### [0.17.35](https://github.com/grimmer0125/numjs/compare/v0.17.34...v0.17.35) (2026-03-07)
+
+- Allow scalar numbers for both arguments in `multiply` and `divide` functions (#14, thanks @pppp606)
+
 ### [0.17.34](https://github.com/grimmer0125/numjs/compare/v0.17.32...v0.17.34) (2021-11-22)
 
 - Improve exported nj as a default export module instead of nj object for better IDE intelligence

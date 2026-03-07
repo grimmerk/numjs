@@ -1,6 +1,6 @@
 {
   "name": "@d4c/numjs",
-  "version": "0.17.34",
+  "version": "0.17.35",
   "description": "Like NumPy, in TypeScript and JavaScript",
   "source": "src/index.ts",
   "main": "build/main/index.js",
