@@ -19,7 +19,7 @@
   },
   "alias": {
     "buffer": "./node_modules/buffer/index.js",
-    "util": "./node_modules/util/util.js"
+    "util": "./src/shims/util-browser.js"
   },
   "repository": "https://github.com/grimmer0125/numjs",
   "homepage": "https://grimmer0125.github.io/numjs",
