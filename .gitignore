@@ -22,3 +22,4 @@ bower_components
 .nyc_output
 build
 coverage
+.parcel-cache/
