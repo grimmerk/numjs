@@ -3,6 +3,12 @@
 ### [0.17.35](https://github.com/grimmer0125/numjs/compare/v0.17.34...v0.17.35) (2026-03-07)
 
 - Allow scalar numbers for both arguments in `multiply` and `divide` functions (#14, thanks @pppp606)
+- Upgrade Parcel to 2.16, TypeScript to >=4.9.5 (including 5.x), @types/node to ^20
+- Fix Parcel CDN bundle for browser (polyfill `buffer`, shim `util`)
+- Fix ESM build: add `.js` extensions to relative imports via post-build script
+- Update CI to Node 20.x/22.x and actions v4
+- Add `workflow_dispatch` publish workflow for manual npm publish
+- Set minimum Node.js version to 20
 
 ### [0.17.34](https://github.com/grimmer0125/numjs/compare/v0.17.32...v0.17.34) (2021-11-22)
 
