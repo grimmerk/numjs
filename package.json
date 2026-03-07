@@ -21,8 +21,8 @@
     "buffer": "./node_modules/buffer/index.js",
     "util": "./src/shims/util-browser.js"
   },
-  "repository": "https://github.com/grimmer0125/numjs",
-  "homepage": "https://grimmer0125.github.io/numjs",
+  "repository": "https://github.com/grimmerk/numjs",
+  "homepage": "https://grimmerk.github.io/numjs",
   "license": "MIT",
   "dependencies": {
     "@types/ndarray": "^1.0.11",
@@ -59,7 +59,7 @@
     "build:parcel": "parcel build && mv build/module/index.js build/module/numjs.min.js",
     "cov:html": "nyc report --reporter=html",
     "doc:html": "typedoc src/lib/index.ts src/lib/ndarray.ts src/lib/errors.ts --out build/docs",
-    "doc:publish": "touch build/docs/.nojekyll && gh-pages -m \"[ci skip] Updates\" -d build/docs -t -r https://github.com/grimmer0125/numjs.git",
+    "doc:publish": "touch build/docs/.nojekyll && gh-pages -m \"[ci skip] Updates\" -d build/docs -t -r https://github.com/grimmerk/numjs.git",
     "buildtest": "run-s build test:*",
     "test": "mocha --require ts-node/register test/mocha/*.spec.ts",
     "cov": "nyc mocha --require ts-node/register test/mocha/*.spec.ts",

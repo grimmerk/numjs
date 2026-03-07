@@ -1,6 +1,6 @@
 # @d4c/numjs
 
-[![npm version](https://img.shields.io/npm/v/%40d4c/numjs.svg)](https://www.npmjs.com/package/@d4c/numjs) ![example workflow](https://github.com/grimmer0125/numjs/actions/workflows/node.js.yml/badge.svg)
+[![npm version](https://img.shields.io/npm/v/%40d4c/numjs.svg)](https://www.npmjs.com/package/@d4c/numjs) ![example workflow](https://github.com/grimmerk/numjs/actions/workflows/node.js.yml/badge.svg)
 
 > **Maintenance Status:** This project is in **passive maintenance** mode — critical bug fixes and small improvements may be accepted, but no active feature development is planned.
 >
@@ -21,7 +21,7 @@ This project is modified from https://github.com/nicolaspanel/numjs and does bel
 - Add "uint8_clamped" (Uint8ClampedArray) support. 
 - Other improvements.
 
-You can check the [changelog](https://github.com/grimmer0125/numjs/blob/master/CHANGELOG.md).
+You can check the [changelog](https://github.com/grimmerk/numjs/blob/master/CHANGELOG.md).
 
 ## Features
 
@@ -34,9 +34,9 @@ Besides its obvious scientific uses, __NumJs__ can also be used as an efficient 
 
 It works both in node.js and in the browser.
 
-__NumJs__ is licensed under the [MIT license](https://github.com/grimmer0125/numjs/blob/master/LICENSE), enabling reuse with almost no restrictions.
+__NumJs__ is licensed under the [MIT license](https://github.com/grimmerk/numjs/blob/master/LICENSE), enabling reuse with almost no restrictions.
 
-Try this [jsfiddle](https://jsfiddle.net/grimmer0125/8jft09q3) to play around with the library.
+Try this [jsfiddle](https://jsfiddle.net/grimmerk/8jft09q3) to play around with the library.
 ## Installation
 
 ```sh
@@ -738,6 +738,6 @@ Thanks to the following people for their contributions:
 - [@pppp606](https://github.com/pppp606) — scalar support for `multiply` and `divide` ([#14](https://github.com/grimmerk/numjs/pull/14))
 
 ## Documentation
-- [@d4c/numjs](https://grimmer0125.github.io/numjs/)
-    - [numjs module (nj) doc](https://grimmer0125.github.io/numjs/modules/)
-    - [NdArray doc](https://grimmer0125.github.io/numjs/classes/ndarray.NdArray.html)
+- [@d4c/numjs](https://grimmerk.github.io/numjs/)
+    - [numjs module (nj) doc](https://grimmerk.github.io/numjs/modules/)
+    - [NdArray doc](https://grimmerk.github.io/numjs/classes/ndarray.NdArray.html)
