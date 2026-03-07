@@ -17,6 +17,9 @@
     },
     "types": false
   },
+  "alias": {
+    "buffer": "./node_modules/buffer/index.js"
+  },
   "repository": "https://github.com/grimmer0125/numjs",
   "homepage": "https://grimmer0125.github.io/numjs",
   "license": "MIT",
