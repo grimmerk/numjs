@@ -741,3 +741,15 @@ Thanks to the following people for their contributions:
 - [@d4c/numjs](https://grimmerk.github.io/numjs/)
     - [numjs module (nj) doc](https://grimmerk.github.io/numjs/modules/)
     - [NdArray doc](https://grimmerk.github.io/numjs/classes/ndarray.NdArray.html)
+
+## Development
+
+```bash
+npm install          # install dependencies
+npm test             # run tests
+npm run build        # build all (parcel CDN bundle + CJS + ESM)
+npm run doc:html     # generate typedoc to build/docs/
+npm run doc:publish  # publish docs to GitHub Pages
+```
+
+**Publish to npm:** Use the "Publish to npm" workflow in GitHub Actions (manual trigger). See [`.github/workflows/publish.yml`](.github/workflows/publish.yml).
