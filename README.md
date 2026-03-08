@@ -749,7 +749,7 @@ npm install          # install dependencies
 npm test             # run tests
 npm run build        # build all (parcel CDN bundle + CJS + ESM)
 npm run doc:html     # generate typedoc to build/docs/
-npm run doc:publish  # publish docs to GitHub Pages
+npm run doc:publish  # publish generated docs to GitHub Pages
 ```
 
 **Publish to npm:** Use the "Publish to npm" workflow in GitHub Actions (manual trigger). See [`.github/workflows/publish.yml`](.github/workflows/publish.yml).
