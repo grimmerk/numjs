@@ -749,6 +749,7 @@ npm install          # install dependencies
 npm test             # run tests
 npm run build        # build all (parcel CDN bundle + CJS + ESM)
 npm run doc:html     # generate typedoc to build/docs/
+# preview build/docs/index.html locally before publishing
 npm run doc:publish  # publish generated docs to GitHub Pages
 ```
 
