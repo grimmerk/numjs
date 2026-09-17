@@ -18,6 +18,14 @@ describe('array', function () {
     expect(nj.uint8([]).dtype).to.eql('uint8');
   });
 
+  it('should infer the dtype from a TypedArray input (#13)', function () {
+    expect(nj.array(new Uint8Array([1, 2, 3])).dtype).to.eql('uint8');
+    expect(nj.array(new Uint8Array([1, 2, 3])).tolist()).to.eql([1, 2, 3]);
+    expect(nj.array(new Float32Array([1.5, 2.5])).dtype).to.eql('float32');
+    expect(nj.array(new Int16Array([1, 2])).dtype).to.eql('int16');
+    expect(nj.array(new Uint8Array([1, 2, 3]), 'float64').dtype).to.eql('float64');
+  });
+
   it('should create a copy of the given multi dimensionnal array', function () {
     const init = [[0, 1], [2, 3]];
     const arr = nj.array(init);
@@ -45,5 +53,11 @@ describe('array', function () {
     expect(vect.dtype).to.equal('array');
     vect.dtype = 'uint8';
     expect(vect.dtype).to.equal('uint8');
+  });
+  it('should keep the dtype of a TypedArray when given without an explicit dtype', function () {
+    const a = nj.array(new Uint8Array([1, 2, 3]));
+    expect(a.dtype).to.eql('uint8');
+    expect(a.tolist()).to.eql([1, 2, 3]);
+    expect(nj.array(new Float64Array([1.5, 2.5])).dtype).to.eql('float64');
   });
 });
