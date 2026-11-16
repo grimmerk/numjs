@@ -1,5 +1,9 @@
 # Changelog
 
+### [0.17.36](https://github.com/grimmerk/numjs/compare/v0.17.35...v0.17.36) (2026-11-17)
+
+Maintenance release: maintainer account migrated from grimmer to grimmerk. No functional changes.
+
 ### [0.17.35](https://github.com/grimmerk/numjs/compare/v0.17.34...v0.17.35) (2026-03-07)
 
 - Allow scalar numbers for both arguments in `multiply` and `divide` functions (#14, thanks @pppp606)

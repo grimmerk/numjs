@@ -21,7 +21,14 @@
     "buffer": "./node_modules/buffer/index.js",
     "util": "./src/shims/util-browser.js"
   },
-  "repository": "https://github.com/grimmerk/numjs",
+  "author": "grimmerk <k@grimmer.io> (https://github.com/grimmerk)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grimmerk/numjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/grimmerk/numjs/issues"
+  },
   "homepage": "https://grimmerk.github.io/numjs",
   "license": "MIT",
   "dependencies": {
