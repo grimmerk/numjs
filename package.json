@@ -69,8 +69,7 @@
     "doc:publish": "touch build/docs/.nojekyll && gh-pages -m \"[ci skip] Updates\" -d build/docs -t -r https://github.com/grimmerk/numjs.git",
     "buildtest": "run-s build test:*",
     "test": "mocha --require ts-node/register test/mocha/*.spec.ts",
-    "cov": "nyc mocha --require ts-node/register test/mocha/*.spec.ts",
-    "postversion": "npm publish"
+    "cov": "nyc mocha --require ts-node/register test/mocha/*.spec.ts"
   },
   "engines": {
     "node": ">=20"

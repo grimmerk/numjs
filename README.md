@@ -7,7 +7,7 @@
 > That said, `@d4c/numjs` remains a **stable, ready-to-use** NumPy-like library with TypeScript typings out of the box — if you need basic ndarray operations without dealing with unstable APIs or a steep learning curve, it still works well.
 >
 > For more comprehensive alternatives, consider:
-> - [numpy-ts](https://github.com/nicktakpk/numpy-ts) — aims to cover 94% of NumPy's API in pure TypeScript (still in early/unstable stage)
+> - [numpy-ts](https://github.com/dupontcyborg/numpy-ts) — fast, complete NumPy for TypeScript & JavaScript, covering about 94% of NumPy's API (476 of 507 functions)
 > - [@stdlib/ndarray](https://github.com/stdlib-js/ndarray) — mature and rigorous, but with a different API style
 
 __NumJs__ is built on top of [ndarray](https://scijs.net/packages/#scijs/ndarray) and uses many [scijs packages](https://scijs.net/packages/). `ndarray` is exported as `nj.ndarray`, and any `NdArray` instance's property `selection` is a `ndarray` object.
@@ -745,12 +745,12 @@ Thanks to the following people for their contributions:
 ## Development
 
 ```bash
-npm install          # install dependencies
-npm test             # run tests
-npm run build        # build all (parcel CDN bundle + CJS + ESM)
-npm run doc:html     # generate typedoc to build/docs/
+yarn install         # install dependencies (this repo uses yarn.lock)
+yarn test            # run tests
+yarn build           # build all (parcel CDN bundle + CJS + ESM)
+yarn doc:html        # generate typedoc to build/docs/
 # preview build/docs/index.html locally before publishing
-npm run doc:publish  # publish generated docs to GitHub Pages
+yarn doc:publish     # publish generated docs to GitHub Pages
 ```
 
-**Publish to npm:** Use the "Publish to npm" workflow in GitHub Actions (manual trigger). See [`.github/workflows/publish.yml`](.github/workflows/publish.yml).
+**Publish to npm:** Bump the version (`npm version patch`), push the commit and tag, then run the "Publish to npm" workflow in GitHub Actions (manual trigger). It uses npm trusted publishing and stages the release (`npm stage publish`); approve the staged version with 2FA on npmjs.com (or `npm stage approve <stage-id>`) to make it public. See [`.github/workflows/publish.yml`](.github/workflows/publish.yml).
