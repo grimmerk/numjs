@@ -753,4 +753,4 @@ yarn doc:html        # generate typedoc to build/docs/
 yarn doc:publish     # publish generated docs to GitHub Pages
 ```
 
-**Publish to npm:** Bump the version (`npm version patch --ignore-scripts`; plain `npm version` would run the `postversion` script, which publishes from your machine), push the commit and tag, then run the "Publish to npm" workflow in GitHub Actions (manual trigger). It uses npm trusted publishing and stages the release (`npm stage publish`); approve the staged version with 2FA on npmjs.com (or `npm stage approve <stage-id>`) to make it public. See [`.github/workflows/publish.yml`](.github/workflows/publish.yml).
+**Publish to npm:** Bump the version (`npm version patch`), push the commit and tag, then run the "Publish to npm" workflow in GitHub Actions (manual trigger). It uses npm trusted publishing and stages the release (`npm stage publish`); approve the staged version with 2FA on npmjs.com (or `npm stage approve <stage-id>`) to make it public. See [`.github/workflows/publish.yml`](.github/workflows/publish.yml).
